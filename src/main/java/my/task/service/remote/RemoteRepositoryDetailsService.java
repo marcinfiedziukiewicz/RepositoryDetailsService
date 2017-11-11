@@ -2,7 +2,6 @@ package my.task.service.remote;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import my.task.model.RemoteRepositoryDetailsResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -14,7 +13,6 @@ import java.text.MessageFormat;
 /**
  * Service responsible for providing response from remote REST API endpoint.
  */
-@Slf4j
 @RequiredArgsConstructor(access = AccessLevel.PACKAGE, onConstructor = @__(@Autowired))
 @Service
 public class RemoteRepositoryDetailsService {

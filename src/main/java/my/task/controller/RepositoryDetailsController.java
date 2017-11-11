@@ -1,4 +1,4 @@
-package my.task.rest;
+package my.task.controller;
 
 
 import lombok.AccessLevel;
@@ -18,7 +18,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
  */
 @RestController
 @RequiredArgsConstructor(access = AccessLevel.PRIVATE, onConstructor = @__(@Autowired))
-public class RepositoryDetailsRestHandler {
+public class RepositoryDetailsController {
 
     private final RepositoryDetailsService repositoryDetailsService;
 

@@ -2,7 +2,6 @@ package my.task.service;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import my.task.model.RemoteRepositoryDetailsResponse;
 import my.task.model.RepositoryDetailsResponse;
 import my.task.service.remote.RemoteRepositoryDetailsService;
@@ -12,7 +11,6 @@ import org.springframework.stereotype.Service;
 /**
  * Service responsible for providing RepositoryDetailsResponse.
  */
-@Slf4j
 @RequiredArgsConstructor(access = AccessLevel.PACKAGE, onConstructor = @__(@Autowired))
 @Service
 public class RepositoryDetailsService {
