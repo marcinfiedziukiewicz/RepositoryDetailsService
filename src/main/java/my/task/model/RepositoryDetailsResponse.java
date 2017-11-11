@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * Response JSON object data mode.
+ */
 @Getter
 @Builder
 @NoArgsConstructor

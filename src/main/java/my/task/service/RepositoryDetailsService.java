@@ -9,6 +9,9 @@ import my.task.service.remote.RemoteRepositoryDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * Service responsible for providing RepositoryDetailsResponse.
+ */
 @Slf4j
 @RequiredArgsConstructor(access = AccessLevel.PACKAGE, onConstructor = @__(@Autowired))
 @Service
@@ -18,7 +21,8 @@ public class RepositoryDetailsService {
 
     public RepositoryDetailsResponse getRepositoryDetails(String owner, String repositoryName) {
         RemoteRepositoryDetailsResponse remoteRepositoryDetailsResponse = remoteRepositoryDetailsService.getRemoteRepositoryDetailsResponse(owner, repositoryName);
-        return RepositoryDetailsResponse.builder().cloneUrl(remoteRepositoryDetailsResponse.getCloneUrl())
+        return RepositoryDetailsResponse.builder()
+                .cloneUrl(remoteRepositoryDetailsResponse.getCloneUrl())
                 .createdAt(remoteRepositoryDetailsResponse.getCreatedAt())
                 .description(remoteRepositoryDetailsResponse.getDescription())
                 .fullName(remoteRepositoryDetailsResponse.getFullName())

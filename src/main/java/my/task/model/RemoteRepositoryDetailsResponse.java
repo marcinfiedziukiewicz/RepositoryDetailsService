@@ -10,6 +10,9 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
+/**
+ * JSON object data model for responses from remote REST API.
+ */
 @Getter
 @Setter
 @NoArgsConstructor

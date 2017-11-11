@@ -1,6 +1,5 @@
 package my.task.configuration;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +7,7 @@ import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by Marcin on 2017-11-11.
+ * Application main configuration class.
  */
 @Configuration
 public class ApplicationConfiguration {
@@ -19,11 +18,6 @@ public class ApplicationConfiguration {
     private int connectTimeout;
     @Value("${resttemplate.connectionRequestTimeout:2500}")
     private int connectionRequestTimeout;
-
-    @Bean
-    public ObjectMapper objectMapper() {
-        return new ObjectMapper();
-    }
 
     @Bean
     public RestTemplate getRestTemplate() {

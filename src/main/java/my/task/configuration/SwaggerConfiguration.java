@@ -15,6 +15,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+/**
+ * Configuration class for swagger, online documentation and REST API endpoint testing.
+ */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfiguration {

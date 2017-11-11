@@ -1,4 +1,5 @@
 # RepositoryDetailsService
+# Documentation: /swagger-ui.html
 # Requirements:
 # 1. Java 1.8 required
 # 2. Maven 3.2.5
