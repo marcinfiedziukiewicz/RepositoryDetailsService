@@ -5,7 +5,7 @@
 
     <groupId>my.task</groupId>
     <artifactId>RepositoryDetailsService</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>RepositoryDetailService</name>
@@ -96,6 +96,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
