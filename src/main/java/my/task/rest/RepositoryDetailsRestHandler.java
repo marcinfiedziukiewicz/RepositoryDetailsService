@@ -27,5 +27,4 @@ public class RepositoryDetailsRestHandler {
     getRepositoriesDetails(@PathVariable String owner, @PathVariable("repository-name") String repositoryName) {
         return repositoryDetailsService.getRepositoryDetails(owner, repositoryName);
     }
-
 }
