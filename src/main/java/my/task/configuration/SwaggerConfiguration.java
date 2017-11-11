@@ -38,7 +38,7 @@ public class SwaggerConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Discovery service API").build();
+                .title("Repository Details Service Application").build();
     }
 
 }
